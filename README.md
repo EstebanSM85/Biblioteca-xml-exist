@@ -1,39 +1,48 @@
-Perfecto, Esteban.
-Aquí tienes un README completo, profesional, con iconos, emojis, secciones claras y estilo GitHub, siguiendo exactamente el formato del ejemplo que me pasaste, pero adaptado a tu proyecto de Gestión de Biblioteca con eXist-db.
-Puedes copiarlo tal cual a tu repositorio.
-
 📚 Sistema de Gestión de Biblioteca con eXist-db
-Sistema de gestión de documentos de biblioteca desarrollado en Java, utilizando eXist-db como base de datos XML nativa y XQuery/XQuery Update para la manipulación de datos.
-Permite almacenar, consultar, insertar y eliminar documentos directamente dentro de un archivo XML centralizado.
+Sistema de gestión de documentos de biblioteca desarrollado en Java utilizando eXist-db como base de datos XML nativa y XQuery/XQuery Update para la manipulación de datos. Permite almacenar, consultar, insertar y eliminar documentos directamente dentro de un archivo XML centralizado.
 
 🚀 Características
-- ✅ Gestión de documentos: Añadir, eliminar, listar y visualizar documentos
-- ✅ Consultas XQuery: Recuperación eficiente de información
-- ✅ Inserción dinámica: Los documentos se insertan dentro de documentos.xml
-- ✅ Eliminación segura: Eliminación mediante XQuery Update
-- ✅ Validación XML: Validación opcional del XML local
-- ✅ Interfaz por consola: Menú interactivo sencillo y claro
-- ✅ Integración completa con eXist-db: Conexión, colecciones y operaciones XML
+
+           ✅ Gestión de documentos: Añadir, eliminar, listar y visualizar documentos
+           
+           ✅ Consultas XQuery: Recuperación eficiente de información
+           
+           ✅ Inserción dinámica: Los documentos se insertan dentro de documentos.xml
+           
+           ✅ Eliminación segura: Eliminación mediante XQuery Update
+           
+           ✅ Validación XML: Validación opcional del XML local
+           
+           ✅ Interfaz por consola: Menú interactivo sencillo y claro
+           
+           ✅ Integración completa con eXist-db: Conexión, colecciones y operaciones XML
+
+
+
 
 🛠️ Tecnologías Utilizadas
-- Java 17
-- Maven
-- eXist-db 6
-- XML + XSD
-- XQuery y XQuery Update
-- API XML:DB
-- Eclipse IDE
+         
+           Java 23: Lenguaje de programación principal
+           
+           Maven: Gestión de dependencias y construcción del proyecto
+           
+           eXist-db 6: Base de datos XML nativa
+           
+           API XML:DB: Comunicación con eXist-db
+           
+           Eclipse IDE: Entorno de desarrollo
+
 
 📋 Requisitos Previos
 Antes de ejecutar el proyecto, asegúrate de tener instalado:
-- JDK 17 o superior
+- JDK 23 o superior
 - Maven 3.6+
-- eXist-db 6 (http://localhost:8080)
+- eXist-db 6 (corriendo en http://localhost:8080)
 - Eclipse IDE (opcional)
 Configuración de eXist-db
-- Descargar desde https://exist-db.org
+- Descargar e instalar eXist-db desde https://exist-db.org
 - Iniciar eXist-db
-- Acceder a: http://localhost:8080/exist
+- Acceder a la interfaz web en http://localhost:8080/exist
 - Credenciales por defecto:
 - Usuario: admin
 - Contraseña: admin
@@ -53,8 +62,9 @@ File → Import → Maven → Existing Maven Projects → Seleccionar carpeta �
 
 ▶️ Ejecución
 Desde Eclipse
+Abrir el proyecto
 Click derecho en Main.java → Run As → Java Application
-Desde terminal
+Desde línea de comandos
 mvn exec:java -Dexec.mainClass="com.biblioteca.main.Main"
 
 
@@ -75,29 +85,32 @@ Al ejecutar la aplicación, se muestra un menú interactivo:
 
 Ejemplos de uso
 📄 Leer documentos
-Opción: 1
-1 - El Quijote
-2 - Harry Potter y la cámara secreta
-3 - 1984
-...
+
+           Opción: 1
+           1 - El Quijote
+           2 - Harry Potter y la cámara secreta
+           3 - 1984
+           ...
 
 
 ➕ Añadir documento
-Opción: 2
-ID: 6
-Título: El último secreto
-Autor: Dan Brown
-Editorial: Planeta
-Fecha publicación: 2025-09-10
-Género: Ficción
-Descripción: ...
-✓ Documento insertado correctamente
+
+           Opción: 2
+           ID: 6
+           Título: El último secreto
+           Autor: Dan Brown
+           Editorial: Planeta
+           Fecha publicación: 2025-09-10
+           Género: Ficción
+           Descripción: ...
+           ✓ Documento insertado correctamente
 
 
 ❌ Eliminar documento
-Opción: 3
-ID del documento a eliminar: 6
-✓ Documento eliminado correctamente
+
+           Opción: 3
+           ID del documento a eliminar: 6
+           ✓ Documento eliminado correctamente
 
 
 🔍 Consultas XQuery
@@ -109,71 +122,91 @@ Incluye:
 - Mostrar documento por ID
 - Contar documentos
 
-🏗️ Estructura del Proyecto
+📕 Estructura del Proyecto
 biblioteca-existdb/
-│
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/biblioteca/
-│   │   │       ├── model/Documento.java
-│   │   │       ├── db/ConexionExistDB.java
-│   │   │       ├── db/ValidadorXML.java
-│   │   │       └── main/Main.java
-│   │   └── resources/
-│   │       └── schemas/documento.xsd
-│
-├── pom.xml
-└── README.md
+
+<img width="462" height="335" alt="image" src="https://github.com/user-attachments/assets/ca3fda3e-c7ae-4056-bb95-17cbc05b1973" />
+
 
 
 
 📦 Estructura de Datos XML
 Los documentos se almacenan dentro de documentos.xml:
-<biblioteca>
-  <documento id="1">
-    <titulo>Ejemplo</titulo>
-    <autor>Autor</autor>
-    <editorial>Editorial</editorial>
-    <fecha_publicacion>2020-01-01</fecha_publicacion>
-    <genero>Novela</genero>
-    <descripcion>Descripción del libro</descripcion>
-    <contenido>Contenido generado automáticamente</contenido>
-  </documento>
-</biblioteca>
+<img width="575" height="260" alt="image" src="https://github.com/user-attachments/assets/0e6c31a8-7920-4501-a8f2-6a0303535cda" />
 
 
 
 🔧 Configuración
-Cambiar URL de eXist-db
-Editar ConexionExistDB.java
+Cambiar la URL de eXist-db
+Editar ConexionExistDB.java línea 20:
+
+           String URI = "xmldb:exist://localhost:8080/exist/xmlrpc";
+
+
 Cambiar credenciales
-Modificar usuario y contraseña en la misma clase
+Editar ConexionExistDB.java líneas 21–22:
+
+           String USUARIO = "admin";
+           String PASSWORD = "admin";
+
+
 Cambiar colección base
-Ruta utilizada:
-/db/biblioteca/documentos
+Editar Main.java o ConexionExistDB.java:
+
+           private static final String COLECCION = "/db/biblioteca/documentos";
+
+
 
 🧪 Pruebas
-Probar conexión
-curl http://localhost:8080/exist
+Probar conexión con eXist-db
+
+           curl http://localhost:8080/exist/
 
 
-Verificar documentos
-- Acceder a la interfaz web
-- Browse Collections
+Debe devolver la página de inicio de eXist-db.
+Verificar documentos almacenados
+- Acceder a http://localhost:8080/exist
+- Ir a "Browse Collections"
 - Navegar a /db/biblioteca/documentos
 - Abrir documentos.xml
 
+📚 Dependencias
+El proyecto utiliza las siguientes dependencias (gestionadas por Maven):
+<img width="396" height="293" alt="image" src="https://github.com/user-attachments/assets/c54a06dc-b69a-4079-89ab-f35bbedb936e" />
+
+
+
+
 🐛 Solución de Problemas
-Error al insertar documento
-Causa: XML mal formado
-Solución: Revisar campos vacíos o caracteres especiales
-Error al eliminar documento
-Causa: ID inexistente
-Solución: Verificar que el documento existe
-No se muestran documentos
-Causa: documentos.xml vacío
-Solución: Subir XML local desde el menú
+Error de conexión con eXist-db
+Problema: Connection refused o no se pudo conectar
+Solución:
+- Verificar que eXist-db está corriendo
+- Comprobar el puerto en la configuración
+- Verificar credenciales
+Error de validación XML
+Problema: El XML no es válido
+Solución:
+- Verificar que todos los campos requeridos están presentes
+- Asegurar que la fecha tiene formato correcto
+- Validar contra el esquema XSD
+Error al listar documentos
+Problema: No se muestran documentos
+Solución:
+- Verificar que la colección /db/biblioteca/documentos existe
+- Comprobar permisos de lectura en eXist-db
+- Asegurar que documentos.xml contiene datos válidos
+
+🤝 Contribuciones
+Las contribuciones son bienvenidas. Por favor:
+- Haz fork del proyecto
+- Crea una rama para tu funcionalidad
+- Commit de tus cambios
+- Push a tu rama
+- Abre un Pull Request
+
+📄 Licencia
+Este proyecto es de código abierto y está disponible bajo la Licencia MIT.
 
 👨‍💻 Autor
 Esteban Sánchez Martínez
