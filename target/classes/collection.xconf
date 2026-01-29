@@ -1,0 +1,17 @@
+<collection xmlns="http://exist-db.org/collection-config/1.0">
+    
+    <index>
+        <fulltext default="none">
+            <include path="/biblioteca/documento/titulo"/>
+            <include path="/biblioteca/documento/descripcion"/>
+            <include path="/biblioteca/documento/contenido"/>
+        </fulltext>
+
+        <range>
+            <create qname="fecha_publicacion" type="xs:date"/>
+            <create qname="genero" type="xs:string"/>
+            <create qname="autor" type="xs:string"/>
+        </range>
+    </index>
+
+</collection>

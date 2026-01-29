@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><biblioteca>
+    <documento id="1">
+        <titulo>El Quijote</titulo>
+        <autor>Miguel de Cervantes</autor>
+        <editorial>Francisco de Robles</editorial>
+        <fecha_publicacion>1605-01-16</fecha_publicacion>
+        <genero>Novela</genero>
+        <descripcion>Primera parte de la obra clásica de Cervantes.</descripcion>
+        <contenido>
+            <capitulo numero="1">
+                <parrafo>En un lugar de la Mancha...</parrafo>
+            </capitulo>
+        </contenido>
+    </documento>
+
+	<documento id="2">
+		<titulo>Harry Potter y la camara secreta</titulo>
+		<autor>JK Rowling</autor>
+		<editorial>Salamandra</editorial>
+		<fecha_publicacion>1999-10-01</fecha_publicacion>
+		<genero>Ficcion</genero>
+		<descripcion>Un joven mago</descripcion>
+		<contenido/>
+	</documento> 
+
+    <documento id="3">
+        <titulo>1984</titulo>
+        <autor>George Orwell</autor>
+        <editorial>Secker y Warburg</editorial>
+        <fecha_publicacion>1949-06-08</fecha_publicacion>
+        <genero>Distopía</genero>
+        <descripcion>Una sociedad totalitaria vigilada por el Gran Hermano.</descripcion>
+        <contenido>
+            <capitulo numero="1">
+                <parrafo>Era un día frío y luminoso de abril...</parrafo>
+            </capitulo>
+        </contenido>
+    </documento>
+
+    <documento id="4">
+        <titulo>La sombra del viento</titulo>
+        <autor>Carlos Ruiz Zafón</autor>
+        <editorial>Planeta</editorial>
+        <fecha_publicacion>2001-04-12</fecha_publicacion>
+        <genero>Misterio</genero>
+        <descripcion>Un joven descubre un libro maldito en el Cementerio de los Libros Olvidados.</descripcion>
+        <contenido>
+            <capitulo numero="1">
+                <parrafo>Aquel amanecer de 1945 mi padre me llevó por primera vez...</parrafo>
+            </capitulo>
+        </contenido>
+    </documento>
+
+    <documento id="5">
+        <titulo>El nombre del viento</titulo>
+        <autor>Patrick Rothfuss</autor>
+        <editorial>DAW Books</editorial>
+        <fecha_publicacion>2007-03-27</fecha_publicacion>
+        <genero>Fantasía</genero>
+        <descripcion>La historia de Kvothe, un arcanista legendario.</descripcion>
+        <contenido>
+            <capitulo numero="1">
+                <parrafo>Un silencio triple reinaba en el pueblo...</parrafo>
+            </capitulo>
+        </contenido>
+    </documento>
+
+
+</biblioteca>
